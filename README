@@ -1,0 +1,55 @@
+% This file is part of CWEB-in-Go.
+% The CWEB-in-Go programs by Alexander Sychev are based
+% on CWEB programs by Silvio Levy and D. E. Knuth.
+% They are distributed WITHOUT ANY WARRANTY, express or implied.
+
+% Copyright (C) 2012 Alexander Sychev
+
+% Permission is granted to make and distribute verbatim copies of this
+% document provided that the copyright notice and this permission notice
+% are preserved on all copies.
+
+% Permission is granted to copy and distribute modified versions of this
+% document under the conditions for verbatim copying, provided that the
+% entire resulting derived work is given a different name and distributed
+% under the terms of a permission notice identical to this one.
+
+% Please send comments, suggestions, etc. to santucco@gmail.com.
+
+This toolset for literate programming is actually intermediate stuff was made
+during adoptation CWEB for Go language http://golang.org.
+Almost all original algorithms are saved, except high-bit processing and some
+other C-specific ones.
+CWEB-in-Go works only with UTF-8 encoded input files and produces UTF-8 encoded 
+output files.
+
+This directory contains the following files:
+
+CWEB-in-Go specific files:
+Makefile
+README
+common.w
+ctangle.w
+cweave.w
+ctangle/ctangle.go
+cweave/cweave.go
+
+Original files from CWEB package:
+cwebmac.tex
+cwebman.tex
+prod.w
+cweb.1
+cweb.el
+c++lib.w
+comm-man.ch
+ctang-man.ch
+cweav-man.ch
+
+The file cwebman.tex is the user manual.
+The examples directory contains additional examples of the use of CWEB.
+The file ctangle/ctangle.go are used for bootstrapping.
+The file cweb.1 is a manual page.
+The file cweb.el is suggested for GNU-Emacs users.
+The file c++lib.w is for C++ users (say `@i c++lib.w' at beginning of program).
+The files *-man.ch are used if you want to make the full 239-page CWEB manual.
+
