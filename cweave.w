@@ -1040,7 +1040,8 @@ delimiters if they are protected by a backslash.
 	delim := c /* what started the string */
 	section_text = section_text[0:0]
 
-	if delim=='\'' && buffer[loc-2]=='@@' {
+	if delim=='\'' && 
+		loc-2<len(buffer) && loc-2>=0 && buffer[loc-2]=='@@' {
 		section_text = append(section_text, '@@')
 		section_text = append(section_text, '@@')
 	}
