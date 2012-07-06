@@ -5899,7 +5899,7 @@ section_count++
 /*315:*/
 //line cweave.w:5002
 
-if loc-1<len(buffer)&&buffer[loc-1]!='*'{
+if loc-1>=len(buffer)||buffer[loc-1]!='*'{
 out_str("\\M")
 
 }else{
